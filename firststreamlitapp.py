@@ -1,8 +1,8 @@
 #pip install matplotlib
 import pandas as pd 
 import streamlit as st 
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 
 st.title ('welcome to streamlit')
