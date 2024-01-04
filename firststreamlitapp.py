@@ -1,7 +1,7 @@
 import pandas as pd 
 import streamlit as st 
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 
 st.title ('welcome to streamlit')
@@ -20,10 +20,10 @@ if uploaded_file is not None :
   st.write(data.describe())
   #st.subheader("histogram visualization")
   selected_columns = st.selectbox("select a colum for histogram",data.columns)
-  plt.figure(figsize = (8,6))
+  #plt.figure(figsize = (8,6))
   #st.set_option('deprecation.showPyplotGlobalUse', False)
-  sns.histplot(data[selected_columns], kde=bool(123))
-  fig, ax = plt.subplots()
-  ax.scatter(data["name"], data[selected_columns])
-  st.pyplot(fig)
+  #sns.histplot(data[selected_columns], kde=bool(123))
+  #fig, ax = plt.subplots()
+  #ax.scatter(data["name"], data[selected_columns])
+  #st.pyplot(fig)
 
